@@ -11,6 +11,7 @@ Oracle's procedural programming language - conditional logic, loops, and variabl
 | [03_LOOPS.md](03_LOOPS.md) | Loop structures (FOR, WHILE, simple) |
 | [04_CONDITIONS.md](04_CONDITIONS.md) | IF/ELSE conditional logic |
 | [05_CURSORS.md](05_CURSORS.md) | Declaring and using cursors |
+| [06_EXCEPTIONS.md](06_EXCEPTIONS.md) | Exception handling and user errors |
 
 ## 🎯 Learning Path
 
@@ -19,6 +20,8 @@ Oracle's procedural programming language - conditional logic, loops, and variabl
 3. Control flow with `04_CONDITIONS.md`
 4. Iterate with `03_LOOPS.md`
 5. Query rows with `05_CURSORS.md`
+6. Handle errors with `06_EXCEPTIONS.md`
+7. Continue with collections in `../16_collections/`
 
 ## 📝 What You'll Learn
 

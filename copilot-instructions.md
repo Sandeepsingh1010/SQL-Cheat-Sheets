@@ -81,10 +81,20 @@ Copilot should respect the repo structure:
 - 01_basics/ → SELECT, WHERE, GROUP BY
 - 02_ddl/ → CREATE, ALTER
 - 03_dml/ → INSERT, UPDATE, DELETE
-- 07_plsql/ → blocks, variables, loops
-- 08_procedures_functions/
-- 09_packages/
-- 10_triggers/
+- 04_joins/ → join patterns
+- 05_joins_subqueries/ → subqueries and advanced joins
+- 06_functions/ → built-in SQL functions
+- 07_plsql_overview/ → legacy PL/SQL summary
+- 08_views_indexes_sequences/ → views, indexes, sequences, synonyms
+- 09_plsql/ → blocks, variables, loops, cursors, exceptions
+- 10_procedures_functions/
+- 11_packages/
+- 12_triggers/
+- 13_security/
+- 14_advanced/
+- 15_exam_quick_revision/
+- 16_collections/
+- examples/
 
 Suggestions should match the correct folder topic.
 

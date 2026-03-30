@@ -23,9 +23,18 @@ A comprehensive guide to Oracle SQL and PL/SQL with practical examples and best 
 - **[06_functions/](06_functions/)** - SQL functions (string, numeric, date, aggregate)
 
 #### Level 3: Advanced
-- **[07_views_indexes_sequences/](07_views_indexes_sequences/)** - Database objects
-- **[08_plsql/](08_plsql/)** - PL/SQL programming basics
-- **[09_procedures_functions/](09_procedures_functions/)** - Stored procedures & functions
+- **[07_plsql_overview/](07_plsql_overview/)** - Legacy single-file PL/SQL overview
+- **[08_views_indexes_sequences/](08_views_indexes_sequences/)** - Database objects
+- **[09_plsql/](09_plsql/)** - PL/SQL programming basics
+- **[10_procedures_functions/](10_procedures_functions/)** - Stored procedures & functions
+- **[11_packages/](11_packages/)** - Package specifications and modular PL/SQL
+
+#### Level 4: Specialized
+- **[12_triggers/](12_triggers/)** - Database triggers
+- **[13_security/](13_security/)** - Users, roles, and privileges
+- **[14_advanced/](14_advanced/)** - Dynamic SQL and advanced topics
+- **[15_exam_quick_revision/](15_exam_quick_revision/)** - Exam-focused quick revision
+- **[16_collections/](16_collections/)** - PL/SQL collection types (associative arrays, nested tables, VARRAYs)
 
 ## 🎯 Quick Navigation
 
@@ -37,9 +46,16 @@ A comprehensive guide to Oracle SQL and PL/SQL with practical examples and best 
 | 🌿 Intermediate | Joins | 5 files | INNER, LEFT, RIGHT, FULL, CROSS |
 | 🌿 Intermediate | Subqueries | 4 files | IN, EXISTS, ANY, ALL, correlated |
 | 🌿 Intermediate | Functions | 8 files | String, Numeric, Date, Aggregate |
+| 🌳 Advanced | PL/SQL Overview | 1 file | Legacy single-file summary |
 | 🌳 Advanced | Objects | 4 files | Views, Indexes, Sequences |
-| 🌳 Advanced | PL/SQL | 5 files | Blocks, Variables, Loops, Cursors |
+| 🌳 Advanced | PL/SQL | 6 files | Blocks, Variables, Loops, Cursors, Exceptions |
 | 🌳 Advanced | Procedures | 2 files | Stored Procedures & Functions |
+| 🌳 Specialized | Packages | 1 file | Package specification |
+| 🌳 Specialized | Triggers | 1 file | Basic trigger patterns |
+| 🌳 Specialized | Security | 1 file | Users, roles, privileges |
+| 🌳 Specialized | Advanced SQL | 1 file | Dynamic SQL |
+| 🌳 Specialized | Exam Revision | 3 files | One-page SQL and common errors |
+| 🌳 Specialized | Collections | 3 files | Associative arrays, nested tables, VARRAYs |
 
 ## 🔍 Featured Topics
 
@@ -53,8 +69,11 @@ A comprehensive guide to Oracle SQL and PL/SQL with practical examples and best 
 ### Advanced Topics
 - [05_joins_subqueries/exists_in_any_all.md](05_joins_subqueries/exists_in_any_all.md) - EXISTS, IN, ANY, ALL
 - [05_joins_subqueries/correlated_subqueries.md](05_joins_subqueries/correlated_subqueries.md) - Correlated queries
-- [07_views_indexes_sequences/views.md](07_views_indexes_sequences/views.md) - Virtual tables
-- [08_plsql/05_CURSORS.md](08_plsql/05_CURSORS.md) - Working with cursors
+- [08_views_indexes_sequences/views.md](08_views_indexes_sequences/views.md) - Virtual tables
+- [09_plsql/05_CURSORS.md](09_plsql/05_CURSORS.md) - Working with cursors
+- [16_collections/01_ASSOCIATIVE_ARRAYS.md](16_collections/01_ASSOCIATIVE_ARRAYS.md) - Key-value collection lookups
+- [16_collections/02_NESTED_TABLES.md](16_collections/02_NESTED_TABLES.md) - SQL-friendly unbounded collections
+- [16_collections/03_VARRAYS.md](16_collections/03_VARRAYS.md) - Ordered collections with fixed size
 
 ## 📖 How to Use This Repository
 
@@ -87,12 +106,13 @@ A comprehensive guide to Oracle SQL and PL/SQL with practical examples and best 
 
 **Advanced (Week 5-6)**
 - Dive into `06_functions/`
-- Learn `07_views_indexes_sequences/`
-- Start with `08_plsql/`
+- Learn `08_views_indexes_sequences/`
+- Start with `09_plsql/`
 
 **Expert (Week 7-8)**
-- Complete `08_plsql/`
-- Build `09_procedures_functions/`
+- Complete `09_plsql/`
+- Build `10_procedures_functions/`
+- Master collection types in `16_collections/`
 - Explore advanced optimization techniques
 
 ## 📋 File Structure
@@ -106,11 +126,21 @@ SQL-Cheat-Sheets/
 ├── 04_joins/                    # Table joins
 ├── 05_joins_subqueries/         # Subqueries
 ├── 06_functions/                # SQL functions
-├── 07_views_indexes_sequences/  # Database objects
-├── 08_plsql/                    # PL/SQL basics
-├── 09_procedures_functions/     # Stored procedures
+├── 07_plsql_overview/           # Legacy PL/SQL overview (single-file)
+├── 08_views_indexes_sequences/  # Database objects
+├── 09_plsql/                    # PL/SQL basics
+├── 10_procedures_functions/     # Stored procedures
+├── 11_packages/                 # Package specifications
+├── 12_triggers/                 # Triggers
+├── 13_security/                 # Security
+├── 14_advanced/                 # Advanced topics
+├── 15_exam_quick_revision/      # Quick revision
+├── 16_collections/              # PL/SQL collection types
+├── examples/                    # Practical examples
+├── INDEX.md                     # Complete index
 ├── README.md                    # This file
 ├── CONTRIBUTING.md              # Contribution guidelines
+├── copilot-instructions.md      # Copilot behavior guidance
 └── LICENSE                      # MIT License
 ```
 

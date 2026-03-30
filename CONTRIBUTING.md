@@ -158,55 +158,64 @@ Your PR will be reviewed for:
 - Bulk operations
 - Conditional operations (MERGE)
 
-### 04_functions
-- Built-in SQL functions
-- String, numeric, date operations
-- NULL handling
-
 ### 05_joins_subqueries
 - All join types
 - Subqueries and derived tables
 - Advanced filtering
 
-### 06_views_indexes_sequences
+### 06_functions
+- Built-in SQL functions
+- String, numeric, date operations
+- NULL handling
+
+### 07_plsql_overview
+- Legacy single-file PL/SQL summary
+
+### 08_views_indexes_sequences
 - View creation and management
 - Index strategies
 - Sequence generators
 
-### 07_plsql
+### 09_plsql
 - PL/SQL blocks and structure
 - Variables and control flow
 - Cursors and loops
 
-### 08_procedures_functions
+### 10_procedures_functions
 - Procedural programming
 - Function creation and usage
 - Parameter passing
 
-### 09_packages
+### 11_packages
 - Package organization
 - Public vs private procedures
 - Package design patterns
 
-### 10_triggers
+### 12_triggers
 - Event-driven programming
 - Audit and validation
 - Complex trigger logic
 
-### 11_security
+### 13_security
 - User management
 - Permission control
 - Data dictionary queries
 
-### 12_advanced
+### 14_advanced
 - Performance optimization
 - Dynamic SQL
 - Advanced cursor techniques
 
-### 13_exam_quick_revision
+### 15_exam_quick_revision
 - Condensed summaries
 - Quick reference
 - Common errors
+
+### 16_collections
+- Associative arrays
+- Nested tables
+- VARRAYs
+- Collection methods and iteration patterns
 
 ### examples/
 - Mini-projects combining multiple concepts

@@ -5,7 +5,7 @@ Procedures are stored PL/SQL programs that perform specific tasks. They can have
 
 ## 🧾 Syntax
 ```sql
-CREATE PROCEDURE procedure_name (
+CREATE OR REPLACE PROCEDURE procedure_name (
     parameter1 [MODE] datatype,
     parameter2 [MODE] datatype
 )

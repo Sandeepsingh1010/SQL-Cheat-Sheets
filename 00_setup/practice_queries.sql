@@ -19,6 +19,11 @@ SELECT e.first_name, e.last_name, d.dept_name
 FROM employees e
 JOIN departments d ON e.dept_id = d.dept_id;
 
+-- List all tables
+SELECT table_name
+FROM user_tables
+ORDER BY table_name;
+
 -- ============================================================================
 -- 2. WHERE CLAUSE FILTERING (01_basics)
 -- ============================================================================
