@@ -88,6 +88,11 @@ This comprehensive SQL learning resource contains **50+ cheat sheets** covering 
 - **02_NESTED_TABLES.md** - Unbounded collections with SQL/PLSQL flexibility
 - **03_VARRAYS.md** - Bounded ordered arrays with fixed maximum size
 
+### 📘 17_records/ - Record Types
+- **01_RECORD_BASICS.md** - Defining and using user-defined RECORD types
+- **02_ROWTYPE_VS_RECORD.md** - Differences between `%ROWTYPE` and `RECORD`
+- **03_RECORDS_WITH_CURSORS.md** - Fetching and processing records with cursors
+
 ### 📘 Root Level Files
 - **README.md** - Project overview & quick links
 - **CONTRIBUTING.md** - Contributing guidelines
@@ -144,6 +149,7 @@ This comprehensive SQL learning resource contains **50+ cheat sheets** covering 
 | Database Objects | 4 | VIEWS, INDEXES, SEQUENCES, SYNONYMS |
 | PL/SQL | 6 | Blocks, Variables, Loops, Cursors, Exceptions |
 | Collections | 3 | Associative arrays, nested tables, VARRAYs |
+| Records | 3 | RECORD type, %ROWTYPE comparison, cursor record handling |
 | Stored Code | 2 | PROCEDURES, FUNCTIONS |
 | Advanced | 4 | PACKAGES, TRIGGERS, SECURITY, DYNAMIC SQL |
 | Exam Prep | 3 | Quick reference & common errors |

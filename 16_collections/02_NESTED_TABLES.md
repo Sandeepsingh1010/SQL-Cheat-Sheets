@@ -39,6 +39,26 @@ END;
 /
 ```
 
+## 🔢 Using COUNT with Nested Tables
+```sql
+DECLARE
+    TYPE t_nums IS TABLE OF NUMBER;
+    v_nums t_nums := t_nums(10, 20, 30, 40);
+BEGIN
+    v_nums.DELETE(2); -- creates a gap
+
+    DBMS_OUTPUT.PUT_LINE('COUNT = ' || v_nums.COUNT); -- 3
+    DBMS_OUTPUT.PUT_LINE('LAST  = ' || v_nums.LAST);  -- 4
+
+    FOR i IN v_nums.FIRST .. v_nums.LAST LOOP
+        IF v_nums.EXISTS(i) THEN
+            DBMS_OUTPUT.PUT_LINE('Index ' || i || ': ' || v_nums(i));
+        END IF;
+    END LOOP;
+END;
+/
+```
+
 ## ⚠️ Common Mistakes
 - Forgetting to initialize with constructor before using elements
 - Assuming no gaps after `DELETE`

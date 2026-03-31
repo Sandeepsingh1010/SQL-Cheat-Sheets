@@ -35,6 +35,7 @@ A comprehensive guide to Oracle SQL and PL/SQL with practical examples and best 
 - **[14_advanced/](14_advanced/)** - Dynamic SQL and advanced topics
 - **[15_exam_quick_revision/](15_exam_quick_revision/)** - Exam-focused quick revision
 - **[16_collections/](16_collections/)** - PL/SQL collection types (associative arrays, nested tables, VARRAYs)
+- **[17_records/](17_records/)** - PL/SQL records (`RECORD`, `%ROWTYPE`, cursor record patterns)
 
 ## 🎯 Quick Navigation
 
@@ -56,6 +57,7 @@ A comprehensive guide to Oracle SQL and PL/SQL with practical examples and best 
 | 🌳 Specialized | Advanced SQL | 1 file | Dynamic SQL |
 | 🌳 Specialized | Exam Revision | 3 files | One-page SQL and common errors |
 | 🌳 Specialized | Collections | 3 files | Associative arrays, nested tables, VARRAYs |
+| 🌳 Specialized | Records | 3 files | RECORD type, %ROWTYPE, cursor fetch patterns |
 
 ## 🔍 Featured Topics
 
@@ -74,6 +76,8 @@ A comprehensive guide to Oracle SQL and PL/SQL with practical examples and best 
 - [16_collections/01_ASSOCIATIVE_ARRAYS.md](16_collections/01_ASSOCIATIVE_ARRAYS.md) - Key-value collection lookups
 - [16_collections/02_NESTED_TABLES.md](16_collections/02_NESTED_TABLES.md) - SQL-friendly unbounded collections
 - [16_collections/03_VARRAYS.md](16_collections/03_VARRAYS.md) - Ordered collections with fixed size
+- [17_records/01_RECORD_BASICS.md](17_records/01_RECORD_BASICS.md) - User-defined RECORD structures
+- [17_records/02_ROWTYPE_VS_RECORD.md](17_records/02_ROWTYPE_VS_RECORD.md) - Choosing between %ROWTYPE and RECORD
 
 ## 📖 How to Use This Repository
 
@@ -113,6 +117,7 @@ A comprehensive guide to Oracle SQL and PL/SQL with practical examples and best 
 - Complete `09_plsql/`
 - Build `10_procedures_functions/`
 - Master collection types in `16_collections/`
+- Master record patterns in `17_records/`
 - Explore advanced optimization techniques
 
 ## 📋 File Structure
@@ -136,6 +141,7 @@ SQL-Cheat-Sheets/
 ├── 14_advanced/                 # Advanced topics
 ├── 15_exam_quick_revision/      # Quick revision
 ├── 16_collections/              # PL/SQL collection types
+├── 17_records/                  # PL/SQL record types
 ├── examples/                    # Practical examples
 ├── INDEX.md                     # Complete index
 ├── README.md                    # This file

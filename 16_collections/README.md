@@ -23,3 +23,12 @@ Dedicated coverage for Oracle PL/SQL collection types.
 - Common methods: COUNT, FIRST, LAST, EXISTS, EXTEND, TRIM, DELETE
 - Iteration patterns for dense and sparse collections
 - Practical usage examples for each type
+- Bulk processing patterns with `BULK COLLECT INTO` and `FORALL`
+
+## 🔢 COUNT Across Collection Types
+
+| Type | What `COUNT` means | Safe loop pattern |
+|------|---------------------|-------------------|
+| Associative Array | Number of keys currently stored | `FIRST/NEXT` |
+| Nested Table | Number of existing elements (can be sparse) | `FIRST..LAST` + `EXISTS(i)` |
+| VARRAY | Current number of elements (dense) | `1..COUNT` |

@@ -22,6 +22,7 @@ Oracle's procedural programming language - conditional logic, loops, and variabl
 5. Query rows with `05_CURSORS.md`
 6. Handle errors with `06_EXCEPTIONS.md`
 7. Continue with collections in `../16_collections/`
+8. Continue with records in `../17_records/`
 
 ## 📝 What You'll Learn
 

@@ -73,3 +73,4 @@ END;
 - EXIT WHEN ends loop prematurely
 - Use CONTINUE to skip to next iteration
 - Name loop variables clearly
+- Use `LEAST()` to cap loop limits safely (example: `FOR i IN 1..LEAST(v_requested_count, 100) LOOP`)

@@ -94,6 +94,7 @@ Copilot should respect the repo structure:
 - 14_advanced/
 - 15_exam_quick_revision/
 - 16_collections/
+- 17_records/
 - examples/
 
 Suggestions should match the correct folder topic.

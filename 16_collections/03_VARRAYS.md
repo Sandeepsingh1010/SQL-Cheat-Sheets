@@ -35,6 +35,25 @@ END;
 /
 ```
 
+## 🔢 Using COUNT with VARRAYs
+```sql
+DECLARE
+    TYPE t_marks IS VARRAY(5) OF NUMBER;
+    v_marks t_marks := t_marks(78, 85);
+BEGIN
+    v_marks.EXTEND;
+    v_marks(3) := 91;
+
+    DBMS_OUTPUT.PUT_LINE('COUNT = ' || v_marks.COUNT); -- 3
+    DBMS_OUTPUT.PUT_LINE('LIMIT = ' || v_marks.LIMIT); -- 5
+
+    FOR i IN 1 .. v_marks.COUNT LOOP
+        DBMS_OUTPUT.PUT_LINE('Mark ' || i || ': ' || v_marks(i));
+    END LOOP;
+END;
+/
+```
+
 ## ⚠️ Common Mistakes
 - Exceeding declared maximum size (`VARRAY(n)`)
 - Treating VARRAYs like unbounded lists

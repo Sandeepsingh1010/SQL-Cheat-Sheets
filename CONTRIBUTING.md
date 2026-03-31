@@ -217,6 +217,11 @@ Your PR will be reviewed for:
 - VARRAYs
 - Collection methods and iteration patterns
 
+### 17_records
+- User-defined RECORD types
+- `%ROWTYPE` vs `RECORD` usage
+- Record and cursor fetch patterns
+
 ### examples/
 - Mini-projects combining multiple concepts
 - Real-world scenarios

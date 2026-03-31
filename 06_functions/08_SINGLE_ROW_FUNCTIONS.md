@@ -145,6 +145,22 @@ FROM dual;
 -- Find employees hired in specific year
 SELECT * FROM employees
 WHERE EXTRACT(YEAR FROM hire_date) = 2020;
+
+-- Time-of-day bucket without EXTRACT
+SELECT
+    TO_CHAR(SYSTIMESTAMP, 'HH24') AS current_hour,
+    CASE
+        WHEN TO_NUMBER(TO_CHAR(SYSTIMESTAMP, 'HH24')) < 12 THEN 'Morning'
+        WHEN TO_NUMBER(TO_CHAR(SYSTIMESTAMP, 'HH24')) < 18 THEN 'Afternoon'
+        ELSE 'Evening/Night'
+    END AS time_bucket
+FROM dual;
+
+-- Weekday name and short day
+SELECT
+    TO_CHAR(SYSDATE, 'FMDay', 'NLS_DATE_LANGUAGE=ENGLISH') AS weekday_name,
+    TO_CHAR(SYSDATE, 'Dy', 'NLS_DATE_LANGUAGE=ENGLISH') AS weekday_short
+FROM dual;
 ```
 
 ### TRUNC (for dates)

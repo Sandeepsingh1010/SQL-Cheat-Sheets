@@ -39,6 +39,21 @@ SELECT ABS(-123.45) FROM dual;         -- 123.45
 SELECT MOD(10, 3) FROM dual;           -- 1
 ```
 
+### LEAST
+```sql
+-- Smallest value among arguments
+SELECT LEAST(10, 3, 25, 7) FROM dual;            -- 3
+SELECT LEAST(12.5, 12.05, 12.9) FROM dual;       -- 12.05
+
+-- Earliest date using LEAST
+SELECT LEAST(
+    DATE '2026-03-01',
+    DATE '2026-02-15',
+    DATE '2026-04-10'
+) AS earliest_date
+FROM dual;                                        -- 2026-02-15
+```
+
 ### POWER / SQRT
 ```sql
 -- Power and square root
@@ -56,8 +71,21 @@ SELECT
 FROM employees;
 ```
 
+## ✅ LEAST Practical Example
+```sql
+SELECT
+    employee_id,
+    salary,
+    commission_pct,
+    LEAST(salary, salary * NVL(commission_pct, 0)) AS lower_component
+FROM employees;
+```
+
 ## 💡 Tips
 - ROUND: negative places round left of decimal
 - TRUNC: simply removes decimals (no rounding)
 - Use ROUND for display, TRUNC for calculation
 - MOD useful for odd/even detection
+- LEAST returns the smallest value from a list of expressions
+- If any argument is NULL, LEAST returns NULL (use NVL/COALESCE when needed)
+- Keep argument data types compatible to avoid implicit conversion issues
